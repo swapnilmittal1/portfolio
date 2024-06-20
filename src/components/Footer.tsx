@@ -27,9 +27,9 @@ export default function Footer() {
       <div className="container mx-auto flex flex-row items-center justify-between py-6">
         <span className="flex flex-row items-center space-x-4">
           <p className="text-xs text-muted-foreground">
-            Made with ❤️ by{" "}
+            Made by Swapnil Mittal
             <Link
-              href="https://github.com/wendoj"
+              href="https://github.com/swapnilmittal1"
               target="_blank"
               passHref
               className="text-foreground transition hover:text-primary"
@@ -44,7 +44,7 @@ export default function Footer() {
           </span>
         </span>
         <Link
-          href="mailto:wendoj@proton.me"
+          href="mailto:swapnilmittal1@gmail.com"
           passHref
           className="text-xs text-muted-foreground hover:text-foreground"
         >

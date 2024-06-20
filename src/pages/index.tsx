@@ -2,6 +2,8 @@ import Container from "@/components/Container";
 import { useEffect, useRef, Suspense, useState } from "react";
 import styles from "@/styles/Home.module.css";
 import { Button } from "@/components/ui/button";
+import ResumeButton from 'src/components/ui/ResumeButton'; // Adjust the import path as necessary
+
 import {
   ChevronRight,
   Code2,
@@ -190,9 +192,7 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              
             </div>
             <div>
               <h1
@@ -206,7 +206,7 @@ export default function Home() {
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  Swapnil.
                 </span>
               </h1>
               <p
@@ -215,8 +215,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
-                crafting unique digital experiences.
+                SDE intern at KBR | Rising Junior @ GeorgiaTech
               </p>
             </div>
             <span
@@ -225,17 +224,19 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link href="mailto:swapnil.mittal1@gmail.com" passHref>
                 <Button>
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
               </Link>
+              
               <Button
-                variant="outline"
-                onClick={() => scrollTo(document.querySelector("#about"))}
-              >
-                Learn more
-              </Button>
+    variant="outline"
+    onClick={() => window.open("https://drive.google.com/file/d/1fs2zrCqsb-sddK7Dxua-xOJBDJr1erBZ/view?usp=sharing")}
+  >
+    Resume 
+  </Button>
+
             </span>
 
             <div
@@ -249,16 +250,16 @@ export default function Home() {
             </div>
           </div>
           <div
-            data-scroll
-            data-scroll-speed="-.01"
-            id={styles["canvas-container"]}
-            className="mt-14 h-full w-full xl:mt-0"
-          >
-            <Suspense fallback={<span>Loading...</span>}>
-              <Spline scene="/assets/scene.splinecode" />
-            </Suspense>
-          </div>
-        </section>
+  data-scroll
+  data-scroll-speed="-.01"
+  id={styles["canvas-container"]}
+  className="mt-full h-96 w-96 xl:mt-0"
+>
+  <Suspense fallback={<span>Loading...</span>}>
+    <Spline scene="/assets/scene.splinecode" />
+  </Suspense>
+</div>
+</section>
 
         {/* About */}
         <section id="about" data-scroll-section>
@@ -446,7 +447,7 @@ export default function Home() {
               I&apos;m currently available for freelance work and open to
               discussing new projects.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
+            <Link href="mailto:swapnilmittal1@gmail.me" passHref>
               <Button className="mt-6">Get in touch</Button>
             </Link>
           </div>
